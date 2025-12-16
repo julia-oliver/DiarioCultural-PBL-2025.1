@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Estrutura principal do layout: VBox com alinhamento central -->
+<VBox fx:id="login" alignment="CENTER" fillWidth="false"
+      minHeight="982.0" minWidth="1512.0" spacing="20.0"
+      stylesheets="@style.css"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.n.HelloController">
+
+    <!-- Espaçamento interno (margem interna) da VBox -->
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Texto de instrução para o usuário -->
+    <Label styleClass="welcome-label" text="Por favor, digite seu nome:" />
+
+    <!-- Campo de texto para o usuário digitar o nome -->
+    <TextField fx:id="nomeTextField" promptText="Seu nome aqui" styleClass="name-text-field" />
+
+    <!-- Botão de confirmação que dispara o método 'cadastrarUsuario' no controller -->
+    <Button onAction="#cadastrarUsuario" styleClass="confirm-button" text="Confirmar" />
+</VBox>

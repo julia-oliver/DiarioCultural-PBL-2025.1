@@ -1,0 +1,52 @@
+[
+  {
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "editora": "Companhia das Letras",
+    "isbn": "978-8535902772",
+    "anoPublicacao": 1949,
+    "genero": "Ficção Distópica",
+    "possuiExemplar": true,
+    "lido": true
+  },
+  {
+    "titulo": "Cem Anos de Solidão",
+    "autor": "Gabriel García Márquez",
+    "editora": "Record",
+    "isbn": "978-8501010674",
+    "anoPublicacao": 1967,
+    "genero": "Realismo Mágico",
+    "possuiExemplar": true,
+    "lido": false
+  },
+  {
+    "titulo": "O Pequeno Príncipe",
+    "autor": "Antoine de Saint-Exupéry",
+    "editora": "Agir",
+    "isbn": "978-8522005230",
+    "anoPublicacao": 1943,
+    "genero": "Literatura Infantil",
+    "possuiExemplar": false,
+    "lido": true
+  },
+  {
+    "titulo": "Dom Casmurro",
+    "autor": "Machado de Assis",
+    "editora": "Martin Claret",
+    "isbn": "978-8572326979",
+    "anoPublicacao": 1899,
+    "genero": "Romance",
+    "possuiExemplar": true,
+    "lido": true
+  },
+  {
+    "titulo": "Harry Potter e a Pedra Filosofal",
+    "autor": "J.K. Rowling",
+    "editora": "Rocco",
+    "isbn": "978-8532511010",
+    "anoPublicacao": 1997,
+    "genero": "Fantasia",
+    "possuiExemplar": false,
+    "lido": false
+  }
+]

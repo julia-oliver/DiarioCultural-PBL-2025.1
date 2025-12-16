@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Layout principal com CSS e controlador associado -->
+<BorderPane styleClass="cadastro-container" stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.n.controllerjavafx.SeriesAvaliacaoController">
+
+    <!-- Cabeçalho da tela com o título -->
+    <top>
+        <HBox alignment="CENTER" style="-fx-padding: 15;">
+            <Label style="-fx-text-fill: #738098; -fx-font-size: 20pt; -fx-font-weight: bold;"
+                   text="Avaliar Série" />
+        </HBox>
+    </top>
+
+    <!-- Corpo central do layout -->
+    <center>
+        <HBox>
+            <children>
+
+                <!-- Lado esquerdo: Tabela de Séries e seleção -->
+                <VBox alignment="CENTER" prefHeight="886.0" prefWidth="893.0" spacing="20"
+                      style="-fx-padding: 30;">
+                    <!-- Tabela com colunas de título e gênero -->
+                    <TableView fx:id="tabelaSeries" maxWidth="852.0" prefHeight="731.0" prefWidth="800.0"
+                               style="-fx-max-width: 800px;" styleClass="table-view">
+                        <columns>
+                            <TableColumn fx:id="colTitulo" prefWidth="300" text="Título">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="titulo" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="colGenero" prefWidth="200" text="Gênero">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="genero" />
+                                </cellValueFactory>
+                            </TableColumn>
+                        </columns>
+                    </TableView>
+
+                    <!-- Botão para selecionar a série da tabela -->
+                    <Button onAction="#handleSelecionarSerie" styleClass="botoescadastro" text="Selecionar Série" />
+
+                    <!-- Exibição do título da série selecionada -->
+                    <Label fx:id="lblTituloSerie" style="-fx-font-size: 18px;" styleClass="textocadastro" />
+                </VBox>
+
+                <!-- Lado direito: Formulário para avaliação -->
+                <VBox prefHeight="851.0" prefWidth="542.0">
+                    <children>
+
+                        <!-- Campo para selecionar a temporada -->
+                        <HBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="542.0" spacing="10">
+                            <Label styleClass="textocadastro" text="Temporada:" />
+                            <Spinner fx:id="spTemporada" styleClass="spinner" />
+                        </HBox>
+
+                        <!-- Pergunta se a temporada foi assistida -->
+                        <HBox alignment="CENTER_LEFT" prefHeight="58.0" prefWidth="1412.0" spacing="10">
+                            <Label styleClass="textocadastro" text="Já assistiu esta temporada?" />
+                            <RadioButton fx:id="rbAssistida" styleClass="textocadastro" text="Sim" />
+                        </HBox>
+
+                        <!-- Grid com campos para data, estrelas e comentário -->
+                        <GridPane alignment="CENTER_LEFT" hgap="10" vgap="10">
+
+                            <!-- Data de visualização -->
+                            <Label styleClass="textocadastro" text="Data de visualização:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <TextField fx:id="txtDataVisualizacao" promptText="DD/MM/AAAA"
+                                       styleClass="caixacadastro" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                            <!-- Avaliação de 1 a 5 -->
+                            <Label styleClass="textocadastro" text="Avaliação (1-5):" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <Spinner fx:id="spEstrelas" styleClass="spinner" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <valueFactory>
+                                    <SpinnerValueFactory.IntegerSpinnerValueFactory initialValue="3" max="5" min="1" />
+                                </valueFactory>
+                            </Spinner>
+
+                            <!-- Comentário do usuário -->
+                            <Label styleClass="textocadastro" text="Comentário:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                            <TextArea fx:id="taComentario" prefRowCount="3" prefWidth="300"
+                                      styleClass="caixacadastro" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                            <!-- Definição das colunas e linhas do GridPane -->
+                            <columnConstraints>
+                                <ColumnConstraints />
+                                <ColumnConstraints />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                            </rowConstraints>
+                        </GridPane>
+
+                        <!-- Botões de ação: salvar e voltar -->
+                        <HBox alignment="CENTER_LEFT" prefHeight="72.0" prefWidth="1412.0" spacing="20">
+                            <Button onAction="#handleSalvarAvaliacao" styleClass="botoescadastro" text="Salvar Avaliação" />
+                            <Button onAction="#handleVoltar" styleClass="botoescadastro" text="Voltar" />
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+</BorderPane>

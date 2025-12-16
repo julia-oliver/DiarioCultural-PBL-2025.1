@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Layout principal da interface -->
+<BorderPane styleClass="cadastro-container"
+            stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.n.controllerjavafx.SeriesControllerJavaFX">
+
+    <!-- Topo com o título da tela -->
+    <top>
+        <HBox alignment="CENTER" style=" -fx-padding: 15;">
+            <Label text="Cadastro de Séries"
+                   style="-fx-text-fill: #738098; -fx-font-size: 20pt; -fx-font-weight: bold;" />
+        </HBox>
+    </top>
+
+    <!-- Área principal com conteúdo rolável -->
+    <center>
+        <ScrollPane fitToWidth="true"
+                    style="-fx-background: transparent; -fx-background-color: transparent;"
+                    BorderPane.alignment="CENTER">
+            <VBox alignment="CENTER" spacing="10" style="-fx-padding: 20;">
+
+                <!-- Grade de campos de cadastro -->
+                <GridPane alignment="CENTER" hgap="10" vgap="10" prefWidth="1430.0" prefHeight="358.0">
+
+                    <!-- Linha 1: Título -->
+                    <Label text="Título:" GridPane.columnIndex="0" GridPane.rowIndex="0"
+                           styleClass="textocadastro" style="-fx-font-weight: bold;" />
+                    <TextField fx:id="txtTitulo" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="0"
+                               styleClass="caixacadastro" />
+
+                    <!-- Linha 2: Gênero e Título Original -->
+                    <Label text="Gênero:" GridPane.columnIndex="0" GridPane.rowIndex="1"
+                           styleClass="textocadastro" style="-fx-font-weight: bold;" />
+                    <TextField fx:id="txtGenero" GridPane.columnIndex="1" GridPane.rowIndex="1"
+                               styleClass="caixacadastro" />
+
+                    <Label text="Título Original:" GridPane.columnIndex="2" GridPane.rowIndex="1"
+                           styleClass="textocadastro" style="-fx-font-weight: bold;" />
+                    <TextField fx:id="txtTituloOriginal" GridPane.columnIndex="3" GridPane.rowIndex="1"
+                               styleClass="caixacadastro" />
+
+                    <!-- Linha 3: Anos -->
+                    <Label text="Ano de Lançamento:" GridPane.columnIndex="0" GridPane.rowIndex="2"
+                           styleClass="textocadastro" style="-fx-font-weight: bold;" />
+                    <TextField fx:id="txtAnoLancamento" GridPane.columnIndex="1" GridPane.rowIndex="2"
+                               styleClass="caixacadastro" />
+
+                    <Label text="Ano de Encerramento:" GridPane.columnIndex="2" GridPane.rowIndex="2"
+                           styleClass="textocadastro" style="-fx-font-weight: bold;" />
+                    <HBox spacing="10" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                        <TextField fx:id="txtAnoEncerramento" disable="true" styleClass="caixacadastro" />
+                        <RadioButton fx:id="rbEmAndamento" text="Em andamento"
+                                     selected="true"
+                                     styleClass="textocadastro"
+                                     onAction="#handleEmAndamentoChanged"/>
+                    </HBox>
+
+                    <!-- Linha 4: Elenco -->
+                    <Label text="Elenco:" GridPane.columnIndex="0" GridPane.rowIndex="3"
+                           styleClass="textocadastro" style="-fx-font-weight: bold;" />
+                    <TextField fx:id="txtElenco" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3"
+                               styleClass="caixacadastro" />
+
+                    <!-- Linha 5: Onde assistir e número de temporadas -->
+                    <Label text="Onde Assistir:" GridPane.columnIndex="0" GridPane.rowIndex="4"
+                           styleClass="textocadastro" style="-fx-font-weight: bold;" />
+                    <TextField fx:id="txtOndeAssistir" GridPane.columnIndex="1" GridPane.rowIndex="4"
+                               styleClass="caixacadastro" />
+
+                    <Label text="Nº Temporadas:" GridPane.columnIndex="2" GridPane.rowIndex="4"
+                           styleClass="textocadastro" style="-fx-font-weight: bold;" />
+                    <Spinner fx:id="spNumTemporadas" GridPane.columnIndex="3" GridPane.rowIndex="4"
+                             styleClass="spinner" />
+
+                    <!-- Definições de layout da grade -->
+                    <columnConstraints>
+                        <ColumnConstraints/>
+                        <ColumnConstraints/>
+                        <ColumnConstraints/>
+                        <ColumnConstraints/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints/>
+                        <RowConstraints/>
+                        <RowConstraints/>
+                        <RowConstraints/>
+                        <RowConstraints/>
+                    </rowConstraints>
+                </GridPane>
+
+                <!-- Seção dinâmica para inserir episódios por temporada -->
+                <VBox alignment="CENTER_LEFT" maxHeight="45.0" maxWidth="930.0" minWidth="718.0"
+                      prefHeight="45.0" prefWidth="921.0">
+                    <Label text="Episódios por Temporada:"
+                           styleClass="textocadastro"
+                           style="-fx-font-weight: bold;"
+                           prefHeight="30.0" prefWidth="271.0" />
+                    <GridPane fx:id="temporadasGrid"
+                              hgap="10" vgap="5"
+                              style="-fx-padding: 10; -fx-background: transparent; -fx-background-color: transparent;"
+                              GridPane.columnSpan="4" />
+                </VBox>
+
+                <!-- Botões -->
+                <HBox alignment="CENTER" spacing="20">
+                    <Button text="Cadastrar" onAction="#handleCadastrarSerie" styleClass="botoescadastro" />
+                    <Button text="Voltar" onAction="#handleXbuttonmenu" styleClass="botoescadastro" />
+                </HBox>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,62 @@
+[
+  {
+    "titulo": "Pulp Fiction",
+    "genero": "Crime",
+    "anoLancamento": 1994,
+    "duracao": 154,
+    "direcao": "Quentin Tarantino",
+    "roteiro": "Quentin Tarantino, Roger Avary",
+    "elenco": "John Travolta, Uma Thurman, Samuel L. Jackson",
+    "tituloOriginal": "Pulp Fiction",
+    "ondeAssistir": "Netflix, Amazon Prime",
+    "visto": true
+  },
+  {
+    "titulo": "O Poderoso Chefão",
+    "genero": "Crime",
+    "anoLancamento": 1972,
+    "duracao": 175,
+    "direcao": "Francis Ford Coppola",
+    "roteiro": "Mario Puzo, Francis Ford Coppola",
+    "elenco": "Marlon Brando, Al Pacino, James Caan",
+    "tituloOriginal": "The Godfather",
+    "ondeAssistir": "Netflix, Paramount+",
+    "visto": false
+  },
+  {
+    "titulo": "Interestelar",
+    "genero": "Ficção Científica",
+    "anoLancamento": 2014,
+    "duracao": 169,
+    "direcao": "Christopher Nolan",
+    "roteiro": "Jonathan Nolan, Christopher Nolan",
+    "elenco": "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+    "tituloOriginal": "Interstellar",
+    "ondeAssistir": "Amazon Prime, HBO Max",
+    "visto": true
+  },
+  {
+    "titulo": "Clube da Luta",
+    "genero": "Drama",
+    "anoLancamento": 1999,
+    "duracao": 139,
+    "direcao": "David Fincher",
+    "roteiro": "Jim Uhls",
+    "elenco": "Brad Pitt, Edward Norton, Helena Bonham Carter",
+    "tituloOriginal": "Fight Club",
+    "ondeAssistir": "Disney+, Star+",
+    "visto": false
+  },
+  {
+    "titulo": "Cidade de Deus",
+    "genero": "Crime",
+    "anoLancamento": 2002,
+    "duracao": 130,
+    "direcao": "Fernando Meirelles, Kátia Lund",
+    "roteiro": "Bráulio Mantovani",
+    "elenco": "Alexandre Rodrigues, Leandro Firmino, Phellipe Haagensen",
+    "tituloOriginal": "Cidade de Deus",
+    "ondeAssistir": "Netflix, Amazon Prime",
+    "visto": true
+  }
+]

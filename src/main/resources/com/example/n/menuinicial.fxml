@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.example.n.HelloController">
+
+    <!-- Conteúdo principal do menu -->
+    <VBox fx:id="menuinicial" alignment="CENTER" spacing="20" stylesheets="@style.css">
+        <!-- Mensagem de boas-vindas -->
+        <Label fx:id="bemvindoLabel" alignment="TOP_LEFT" prefWidth="1200.0" styleClass="bemvindo" text=""/>
+
+        <!-- Seção de categorias -->
+        <VBox styleClass="teste">
+            <HBox alignment="CENTER" spacing="70" styleClass="linha1">
+                <Button onAction="#handleLivros" styleClass="botaolivros" />
+                <Button onAction="#handleFilmes" styleClass="botaofilmes" />
+                <Button onAction="#handleSeries" styleClass="botaoseries" />
+            </HBox>
+
+            <!-- Seção de ações -->
+            <HBox alignment="CENTER" spacing="70" styleClass="linha2">
+                <Button onAction="#handleBuscar" styleClass="botaobuscar" />
+                <Button onAction="#handleListar" styleClass="botaolistar" />
+                <Button onAction="#handleEditar" styleClass="botaoeditar" />
+            </HBox>
+        </VBox>
+    </VBox>
+
+    <VBox fx:id="submenulivro" alignment="TOP_CENTER" spacing="20" xmlns="http://javafx.com/javafx/23.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" styleClass="submenulivro" visible="false">
+        <padding>
+            <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+        </padding>
+
+        <!-- Cabeçalho do submenu -->
+        <HBox alignment="CENTER" spacing="300">
+            <Label text="Livros" styleClass="submenu-title" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+            <Button text="X" styleClass="close-button" onAction="#fecharsubmenulivro"/>
+        </HBox>
+
+        <!-- Opções do submenu -->
+        <Button text="Cadastrar livro" styleClass="submenu-button" onAction="#handleCadastrarLivro"/>
+        <Button text="Avaliar livro" styleClass="submenu-button" onAction="#handleAvaliarLivro"/>
+    </VBox>
+
+    <VBox fx:id="submenufilmes" alignment="TOP_CENTER" spacing="20" xmlns="http://javafx.com/javafx/23.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" styleClass="submenufilmes" visible="false">
+        <padding>
+            <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+        </padding>
+
+        <!-- Cabeçalho do submenu -->
+        <HBox alignment="CENTER" spacing="300">
+            <Label text="Filmes" styleClass="submenu-title" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+            <Button text="X" styleClass="close-button" onAction="#fecharsubmenufilme"/>
+        </HBox>
+
+        <!-- Opções do submenu -->
+        <Button text="Cadastrar filme" styleClass="submenu-button" onAction="#handleCadastrarFilmes"/>
+        <Button text="Avaliar filme" styleClass="submenu-button" onAction="#handleAvaliarFilme"/>
+    </VBox>
+
+    <VBox fx:id="submenuseries" alignment="TOP_CENTER" spacing="20" xmlns="http://javafx.com/javafx/23.0.1"
+          xmlns:fx="http://javafx.com/fxml/1" styleClass="submenuseries" visible="false">
+        <padding>
+            <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+        </padding>
+
+        <!-- Cabeçalho do submenu -->
+        <HBox alignment="CENTER" spacing="300">
+            <Label text="Séries" styleClass="submenu-title" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+            <Button text="X" styleClass="close-button" onAction="#fecharsubmenuseries"/>
+        </HBox>
+
+        <!-- Opções do submenu -->
+        <Button text="Cadastrar série" styleClass="submenu-button" onAction="#handleCadastrarSeries"/>
+        <Button text="Avaliar série" styleClass="submenu-button" onAction="#handleAvaliarSerie"/>
+    </VBox>
+</StackPane>

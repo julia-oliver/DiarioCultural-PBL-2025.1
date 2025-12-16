@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae080868-0898-48e2-81f8-b142a18ff7f3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2wbp0NUHTq31oNoUdWQV0ZeCxnj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in fxgfhd.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/ADM/Downloads/Julia Gonçalves - PBL I - Fase 3/Julia Gonçalves - PBL I - Fase 3/Julia Gonçalves - PBL I - Fase 3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADM\IdeaProjects\fxgfhd\src\main\resources" />
+      <recent name="C:\Users\ADM\IdeaProjects\fxgfhd\src" />
+      <recent name="C:\Users\ADM\IdeaProjects\fxgfhd\src\main\java\com\example\fxgfhd" />
+      <recent name="C:\Users\ADM\IdeaProjects\fxgfhd\src\main\resources\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADM\Downloads\Julia Gonçalves - PBL I - Fase 3\Julia Gonçalves - PBL I - Fase 3\src\main\java\com\example\n" />
+      <recent name="C:\Users\ADM\IdeaProjects\fxgfhd\src\main\resources\images" />
+      <recent name="C:\Users\ADM\IdeaProjects\fxgfhd\src\main\resources\com\example\n" />
+      <recent name="C:\Users\ADM\IdeaProjects\fxgfhd\src\main\java" />
+      <recent name="C:\Users\ADM\IdeaProjects\fxgfhd\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.n" />
+      <recent name="com.example.fxgfhd" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.HelloApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-24" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.example.n.HelloApplication" />
+      <module name="julia-goncalves-pbl1-fase3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.n.controllerjavafx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in fxgfhd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fxgfhd" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.All in fxgfhd" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae080868-0898-48e2-81f8-b142a18ff7f3" name="Changes" comment="" />
+      <created>1746319905628</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746319905628</updated>
+      <workItem from="1746319906917" duration="762000" />
+      <workItem from="1746321643168" duration="2360000" />
+      <workItem from="1746324069666" duration="5932000" />
+      <workItem from="1746331069091" duration="3012000" />
+      <workItem from="1746366936726" duration="7830000" />
+      <workItem from="1746382277938" duration="6277000" />
+      <workItem from="1746392733397" duration="32000" />
+      <workItem from="1746565471677" duration="2307000" />
+      <workItem from="1747130513115" duration="612000" />
+      <workItem from="1747266977912" duration="616000" />
+      <workItem from="1747773117319" duration="1360000" />
+      <workItem from="1747949630132" duration="3094000" />
+      <workItem from="1748120845384" duration="12000" />
+      <workItem from="1748379723377" duration="2416000" />
+      <workItem from="1748604114881" duration="3948000" />
+      <workItem from="1749071873435" duration="71000" />
+      <workItem from="1749250363915" duration="641000" />
+      <workItem from="1749399039531" duration="1118000" />
+      <workItem from="1749416619834" duration="2633000" />
+      <workItem from="1750521905388" duration="1709000" />
+      <workItem from="1750523652886" duration="1930000" />
+      <workItem from="1750525647564" duration="885000" />
+      <workItem from="1750526856414" duration="179000" />
+      <workItem from="1750527311479" duration="3720000" />
+      <workItem from="1750533865749" duration="1684000" />
+      <workItem from="1750535608189" duration="1112000" />
+      <workItem from="1750537940022" duration="1162000" />
+      <workItem from="1750595910700" duration="20860000" />
+      <workItem from="1750687015084" duration="14041000" />
+      <workItem from="1750772267352" duration="10411000" />
+      <workItem from="1751126718147" duration="1245000" />
+      <workItem from="1751214933834" duration="104000" />
+      <workItem from="1751389941544" duration="3740000" />
+      <workItem from="1751469898197" duration="10000" />
+      <workItem from="1751469966933" duration="420000" />
+      <workItem from="1751470493263" duration="3441000" />
+      <workItem from="1751473993272" duration="1084000" />
+      <workItem from="1751481507055" duration="5488000" />
+      <workItem from="1751488884838" duration="60000" />
+      <workItem from="1751987410544" duration="184000" />
+      <workItem from="1751988115204" duration="86000" />
+      <workItem from="1751988264609" duration="1499000" />
+      <workItem from="1765899076693" duration="411000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

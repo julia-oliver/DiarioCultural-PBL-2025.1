@@ -1,0 +1,335 @@
+/* ======================= FONTES ======================= */
+@font-face {
+    src: url('fonts/Gloock-Regular.ttf');
+    font-family: 'Gloock';
+}
+
+/* ======================= ROOT ======================= */
+.root {
+    -fx-min-width: 1512px;
+    -fx-min-height: 982px;
+    -fx-font-family: 'Gloock';
+}
+
+/* ======================= TELA DE LOGIN ======================= */
+#login {
+    -fx-background-image: url("../../../images/login.jpg");
+    -fx-background-size: cover;
+}
+
+#login .welcome-label {
+    -fx-font-family: 'Gloock';
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#login .name-text-field {
+    -fx-font-family: 'Gloock';
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+    -fx-background-color: transparent;
+    -fx-border-color: #A3B0C8;
+    -fx-border-width: 4px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 25px;
+}
+
+#login .confirm-button {
+    -fx-font-size: 13px;
+    -fx-pref-width: 100px;
+    -fx-background-radius: 30px;
+    -fx-background-color: #A3B0C8;
+    -fx-font-family: "Century Gothic Bold";
+}
+
+/* ======================= MENU INICIAL ======================= */
+#menuinicial {
+    -fx-background-image: url("../../../images/background.jpg");
+    -fx-background-size: cover;
+    -fx-spacing: 60px;
+}
+
+#menuinicial .bemvindo {
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #738098;
+    -fx-alignment: top-left;
+    -fx-start-margin: 20px;
+    -fx-max-width: 1300px;
+    -fx-translate-y: -50px;
+    -fx-font-family: 'Gloock';
+}
+
+#menuinicial .teste {
+    -fx-spacing: 70px;
+    -fx-translate-y: -40px;
+}
+
+/* ===== Botões do menu principal ===== */
+#menuinicial .botaolivros,
+#menuinicial .botaofilmes,
+#menuinicial .botaoseries,
+#menuinicial .botaobuscar,
+#menuinicial .botaoeditar,
+#menuinicial .botaolistar {
+    -fx-pref-width: 250px;
+    -fx-pref-height: 260px;
+    -fx-background-color: transparent;
+    -fx-background-size: contain;
+}
+
+#menuinicial .botaolivros {
+    -fx-background-image: url("../../../images/botaolivros.png");
+}
+
+#menuinicial .botaofilmes {
+    -fx-background-image: url("../../../images/botaofilmes.png");
+}
+
+#menuinicial .botaoseries {
+    -fx-background-image: url("../../../images/botaoseries.png");
+}
+
+#menuinicial .botaobuscar {
+    -fx-background-image: url("../../../images/botaobuscar.png");
+}
+
+#menuinicial .botaolistar {
+    -fx-background-image: url("../../../images/botaolistar.png");
+}
+
+#menuinicial .botaoeditar {
+    -fx-background-image: url("../../../images/botaoeditar.png");
+}
+
+/* ======================= SUBMENUS ======================= */
+.submenu-title {
+    -fx-text-fill: #738098;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: 'Gloock';
+}
+
+.close-button {
+    -fx-background-color: #738098;
+    -fx-background-radius: 20px;
+    -fx-text-fill: white;
+}
+
+/* Submenus por tipo */
+.submenulivro,
+.submenufilmes,
+.submenuseries {
+    -fx-background-color: #E6DBF8;
+    -fx-padding: 20px;
+    -fx-background-radius: 30px;
+    -fx-max-width: 500px;
+    -fx-translate-x: 520px;
+}
+
+.submenu-button {
+    -fx-background-color: white;
+    -fx-text-fill: #738098;
+    -fx-max-width: 400px;
+    -fx-font-size: 20px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-font-family: 'Gloock';
+}
+
+/* ======================= TELA DE CADASTRO ======================= */
+.cadastro-container {
+    -fx-background-image: url("../../../images/background.jpg");
+    -fx-background-size: cover;
+    -fx-padding: 20px;
+}
+
+.textocadastro {
+    -fx-font-family: 'Gloock';
+    -fx-text-fill: #738098;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.textocadastromenor {
+    -fx-font-family: 'Gloock';
+    -fx-text-fill: #738098;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.caixacadastro {
+    -fx-border-color: #A3B0C8;
+    -fx-border-width: 3px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 25px;
+    -fx-pref-height: 45px;
+    -fx-font-size: 16px;
+}
+
+/* Ajustes internos da caixa */
+.caixacadastro .content,
+.caixacadastro .scroll-pane,
+.caixacadastro .scroll-pane .viewport,
+.caixacadastro .scroll-pane .content {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px;
+}
+
+/* Botões de ação */
+.botoescadastro {
+    -fx-background-color: #A3B0C8;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-min-width: 170;
+    -fx-min-height: 40;
+    -fx-background-radius: 25px;
+}
+
+.botoescadastro:hover {
+    -fx-background-color: #738098;
+}
+
+/* ======================= SPINNER ======================= */
+.spinner {
+    -fx-background-color: white;
+    -fx-border-color: #A3B0C8;
+    -fx-border-width: 3px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 25px;
+    -fx-pref-height: 45px;
+}
+
+.spinner .increment-arrow-button {
+    -fx-background-color: #A3B0C8;
+    -fx-background-radius: 0 15px 0 0;
+}
+
+.spinner .decrement-arrow-button {
+    -fx-background-color: #A3B0C8;
+    -fx-background-radius: 0 0 15px 0;
+}
+
+.spinner .increment-arrow {
+    -fx-shape: "M 0 5 L 5 0 L 10 5 Z";
+    -fx-background-color: white;
+}
+
+.spinner .decrement-arrow {
+    -fx-shape: "M 0 0 L 5 5 L 10 0 Z";
+    -fx-background-color: white;
+}
+
+.spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+    -fx-text-fill: #738098;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #738098;
+}
+
+/* ======================= TABLE VIEW ======================= */
+.table-view {
+    -fx-font-family: 'Gloock';
+    -fx-font-size: 16px;
+    -fx-background-color: white;
+    -fx-border-color: #A3B0C8;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+}
+
+/* Cabeçalho */
+.table-view .column-header-background {
+    -fx-background-color: #A3B0C8;
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+/* Células */
+.table-view .table-cell {
+    -fx-text-fill: #738098;
+    -fx-border-color: transparent;
+    -fx-padding: 8px;
+}
+
+/* Linhas alternadas */
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:even {
+    -fx-background-color: white;
+}
+
+/* Linha selecionada */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #E6DBF8;
+    -fx-text-fill: #738098;
+}
+
+/* Scrollbar */
+.table-view .scroll-bar:horizontal,
+.table-view .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color: #A3B0C8;
+    -fx-background-radius: 5px;
+}
+
+/* ======================= TAB PANE PERSONALIZADO ======================= */
+.custom-tab-pane {
+    -fx-background-color: transparent;
+    -fx-tab-min-width: 120px;
+    -fx-tab-max-width: 200px;
+    -fx-tab-min-height: 40px;
+    -fx-tab-max-height: 40px;
+}
+
+.custom-tab-pane .tab {
+    -fx-background-color: #A3B0C8;
+    -fx-background-radius: 10px 10px 0 0;
+    -fx-border-color: transparent;
+    -fx-font-family: 'Gloock';
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-padding: 5 15;
+}
+
+.custom-tab-pane .tab:selected {
+    -fx-background-color: #738098;
+    -fx-font-weight: bold;
+}
+
+.custom-tab-pane .tab .tab-label {
+    -fx-text-fill: white;
+    -fx-font-family: 'Gloock';
+    -fx-font-size: 14px;
+}
+
+.custom-tab-pane .tab-content-area,
+.custom-tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.custom-tab-pane .tab:hover {
+    -fx-background-color: #8A9BB8;
+}

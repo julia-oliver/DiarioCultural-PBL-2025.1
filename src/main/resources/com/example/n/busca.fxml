@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<!-- Layout principal da tela de busca -->
+<BorderPane styleClass="cadastro-container"
+            stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.n.controllerjavafx.BuscadorJavaFX">
+
+    <!-- Topo: título da interface -->
+    <top>
+        <HBox alignment="CENTER" style="-fx-padding: 15;">
+            <Label style="-fx-text-fill: #738098; -fx-font-size: 20pt; -fx-font-weight: bold;"
+                   text="Busca de Itens" />
+        </HBox>
+    </top>
+
+    <!-- Centro: TabPane com abas para Livros, Filmes e Séries -->
+    <center>
+        <TabPane fx:id="tabPane"
+                 tabClosingPolicy="UNAVAILABLE"
+                 styleClass="custom-tab-pane">
+            <tabs>
+
+                <!-- Aba de Livros -->
+                <Tab fx:id="tabLivros" text="Livros"
+                     style="-fx-font-family: 'Gloock'; -fx-font-weight: bold;"
+                     styleClass="custom-tab">
+                    <content>
+                        <VBox spacing="10" style="-fx-padding: 20;">
+
+                            <!-- Linha de busca: tipo, campo e botão -->
+                            <HBox spacing="10" alignment="CENTER_LEFT">
+                                <Label styleClass="textocadastro" text="Buscar por:"/>
+                                <ComboBox fx:id="comboTipoBuscaLivros" styleClass="caixacadastro" prefWidth="150"/>
+                                <TextField fx:id="campoBuscaLivros" styleClass="caixacadastro" prefWidth="200"
+                                           promptText="Digite o termo de busca"/>
+                                <Button onAction="#buscarLivros" styleClass="botoescadastro" text="Buscar"/>
+                            </HBox>
+
+                            <!-- Tabela com os resultados dos livros -->
+                            <TableView fx:id="tabelaLivros"
+                                       styleClass="table-view"
+                                       prefHeight="600">
+                                <!-- As colunas são definidas no controller -->
+                            </TableView>
+
+                            <!-- Botão de voltar -->
+                            <Button onAction="#handleVoltar" styleClass="botoescadastro" text="Voltar"/>
+                        </VBox>
+                    </content>
+                </Tab>
+
+                <!-- Aba de Filmes -->
+                <Tab fx:id="tabFilmes" text="Filmes"
+                     style="-fx-font-family: 'Gloock'; -fx-font-weight: bold;"
+                     styleClass="custom-tab">
+                    <content>
+                        <VBox spacing="10" style="-fx-padding: 20;">
+
+                            <!-- Linha de busca -->
+                            <HBox spacing="10" alignment="CENTER_LEFT">
+                                <Label styleClass="textocadastro" text="Buscar por:"/>
+                                <ComboBox fx:id="comboTipoBuscaFilmes" styleClass="caixacadastro" prefWidth="150"/>
+                                <TextField fx:id="campoBuscaFilmes" styleClass="caixacadastro" prefWidth="200"
+                                           promptText="Digite o termo de busca"/>
+                                <Button onAction="#buscarFilmes" styleClass="botoescadastro" text="Buscar"/>
+                            </HBox>
+
+                            <!-- Tabela de resultados -->
+                            <TableView fx:id="tabelaFilmes"
+                                       styleClass="table-view"
+                                       prefHeight="600">
+                                <!-- As colunas são configuradas no controller -->
+                            </TableView>
+
+                            <!-- Botão de voltar -->
+                            <Button onAction="#handleVoltar" styleClass="botoescadastro" text="Voltar"/>
+                        </VBox>
+                    </content>
+                </Tab>
+
+                <!-- Aba de Séries -->
+                <Tab fx:id="tabSeries" text="Séries"
+                     style="-fx-font-family: 'Gloock'; -fx-font-weight: bold;"
+                     styleClass="custom-tab">
+                    <content>
+                        <VBox spacing="10" style="-fx-padding: 20;">
+
+                            <!-- Linha de busca -->
+                            <HBox spacing="10" alignment="CENTER_LEFT">
+                                <Label styleClass="textocadastro" text="Buscar por:"/>
+                                <ComboBox fx:id="comboTipoBuscaSeries" styleClass="caixacadastro" prefWidth="150"/>
+                                <TextField fx:id="campoBuscaSeries" styleClass="caixacadastro" prefWidth="200"
+                                           promptText="Digite o termo de busca"/>
+                                <Button onAction="#buscarSeries" styleClass="botoescadastro" text="Buscar"/>
+                            </HBox>
+
+                            <!-- Tabela de resultados -->
+                            <TableView fx:id="tabelaSeries"
+                                       styleClass="table-view"
+                                       prefHeight="600">
+                                <!-- As colunas são configuradas no controller -->
+                            </TableView>
+
+                            <!-- Botão de voltar -->
+                            <Button onAction="#handleVoltar" styleClass="botoescadastro" text="Voltar"/>
+                        </VBox>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

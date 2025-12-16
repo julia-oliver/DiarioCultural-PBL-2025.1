@@ -1,0 +1,164 @@
+[
+  {
+    "titulo": "Breaking Bad",
+    "genero": "Drama",
+    "anoLancamento": 2008,
+    "anoEncerramento": 2013,
+    "elenco": "Bryan Cranston, Aaron Paul, Anna Gunn",
+    "tituloOriginal": "Breaking Bad",
+    "ondeAssistir": "Netflix",
+    "temporadas": [
+      {
+        "numero": 1,
+        "ano": 2008,
+        "numEpisodios": 7,
+        "assistida": true,
+        "review": {
+          "autor": "julia",
+          "texto": "meio ruim",
+          "estrelas": 3,
+          "data": "24/05/2011"
+        }
+      },
+      {
+        "numero": 2,
+        "ano": 2009,
+        "numEpisodios": 13,
+        "assistida": true,
+        "review": {
+          "autor": "julia",
+          "texto": "Gostei",
+          "estrelas": 3,
+          "data": "31/08/2005"
+        }
+      },
+      {
+        "numero": 3,
+        "ano": 2010,
+        "numEpisodios": 13,
+        "assistida": true
+      },
+      {
+        "numero": 4,
+        "ano": 2011,
+        "numEpisodios": 13,
+        "assistida": false
+      },
+      {
+        "numero": 5,
+        "ano": 2012,
+        "numEpisodios": 16,
+        "assistida": false
+      }
+    ],
+    "avaliacaoMedia": 3.0
+  },
+  {
+    "titulo": "Stranger Things",
+    "genero": "Ficção científica",
+    "anoLancamento": 2016,
+    "anoEncerramento": 0,
+    "elenco": "Millie Bobby Brown, Finn Wolfhard, Winona Ryder",
+    "tituloOriginal": "Stranger Things",
+    "ondeAssistir": "Netflix",
+    "temporadas": [
+      {
+        "numero": 1,
+        "ano": 2016,
+        "numEpisodios": 8,
+        "assistida": true
+      },
+      {
+        "numero": 2,
+        "ano": 2017,
+        "numEpisodios": 9,
+        "assistida": true
+      },
+      {
+        "numero": 3,
+        "ano": 2019,
+        "numEpisodios": 8,
+        "assistida": false
+      },
+      {
+        "numero": 4,
+        "ano": 2022,
+        "numEpisodios": 9,
+        "assistida": false
+      }
+    ],
+    "avaliacaoMedia": 8.7
+  },
+  {
+    "titulo": "Friends",
+    "genero": "Comédia",
+    "anoLancamento": 1994,
+    "anoEncerramento": 2004,
+    "elenco": "Jennifer Aniston, Courteney Cox, Lisa Kudrow",
+    "tituloOriginal": "Friends",
+    "ondeAssistir": "HBO Max",
+    "temporadas": [
+      {
+        "numero": 1,
+        "ano": 1994,
+        "numEpisodios": 24,
+        "assistida": true
+      },
+      {
+        "numero": 2,
+        "ano": 1995,
+        "numEpisodios": 24,
+        "assistida": true
+      },
+      {
+        "numero": 3,
+        "ano": 1996,
+        "numEpisodios": 25,
+        "assistida": true
+      },
+      {
+        "numero": 4,
+        "ano": 1997,
+        "numEpisodios": 24,
+        "assistida": false
+      },
+      {
+        "numero": 5,
+        "ano": 1998,
+        "numEpisodios": 24,
+        "assistida": false
+      }
+    ],
+    "avaliacaoMedia": 8.9
+  },
+  {
+    "titulo": "Jaquetas amarelas",
+    "genero": "Terror",
+    "anoLancamento": 2022,
+    "anoEncerramento": 0,
+    "elenco": "Sophie Thatcher",
+    "tituloOriginal": "Yellowjackets",
+    "ondeAssistir": "Netflix",
+    "temporadas": [
+      {
+        "numero": 1,
+        "ano": 2022,
+        "numEpisodios": 8,
+        "assistida": false
+      },
+      {
+        "numero": 2,
+        "ano": 2023,
+        "numEpisodios": 9,
+        "assistida": false
+      },
+      {
+        "numero": 3,
+        "ano": 2024,
+        "numEpisodios": 7,
+        "assistida": false
+      }
+    ],
+    "avaliacaoMedia": 0.0
+  }
+]
